@@ -100,7 +100,10 @@ export default function CameraGame({
             {gameStatus === "playing" ? (
               <>
                 <GameHUD timeLeft={timeLeft} />
-                <div className="score-display">{currentScore}</div>
+                <div className="score-display">
+                  <span className="score-label">score</span>
+                  <span>{currentScore}</span>
+                </div>
               </>
             ) : null}
             {gameStatus === "finished" ? (
@@ -118,6 +121,7 @@ export default function CameraGame({
                 crossingCandidate:{" "}
                 {debugInfo.crossingCandidate ? "true" : "false"}
               </div>
+              <div>shakeEnergy: {debugInfo.shakeEnergy.toFixed(3)}</div>
               <div>score: {debugInfo.score}</div>
             </div>
           </div>
