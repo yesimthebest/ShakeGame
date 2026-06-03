@@ -108,11 +108,16 @@ export default function CameraGame({
             ) : null}
             <div className="debug-panel">
               <div>
-                diff:{" "}
-                {debugInfo.diff === null ? "UNKNOWN" : debugInfo.diff.toFixed(3)}
+                distanceX:{" "}
+                {debugInfo.distanceX === null
+                  ? "UNKNOWN"
+                  : debugInfo.distanceX.toFixed(3)}
               </div>
-              <div>currentZone: {debugInfo.currentZone}</div>
-              <div>armedSide: {debugInfo.armedSide}</div>
+              <div>currentPhase: {debugInfo.currentPhase}</div>
+              <div>
+                crossingCandidate:{" "}
+                {debugInfo.crossingCandidate ? "true" : "false"}
+              </div>
               <div>score: {debugInfo.score}</div>
             </div>
           </div>
