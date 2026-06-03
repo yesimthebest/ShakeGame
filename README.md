@@ -2,6 +2,8 @@
 
 Webcam-based wrist crossing game built with Vite, React, TypeScript, and MediaPipe Pose Landmarker.
 
+Prod. by mingibroski
+
 ## Run locally
 
 ```bash
