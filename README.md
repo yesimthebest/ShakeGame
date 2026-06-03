@@ -1,4 +1,4 @@
-# Shake Count
+# Shake Game - 흔들기게임
 
 Webcam-based wrist crossing game built with Vite, React, TypeScript, and MediaPipe Pose Landmarker.
 
