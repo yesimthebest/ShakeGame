@@ -13,6 +13,10 @@ npm run dev
 
 Open the local URL printed by Vite, then press `Start`.
 
+## Live demo
+
+https://shakegame-navy-five.vercel.app
+
 ## Build
 
 ```bash
