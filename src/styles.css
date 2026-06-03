@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1d1d1f;
+  background: #f7f7f8;
+}
+
+button {
+  border: 1px solid #1d1d1f;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  font: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  background: #1d1d1f;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.app h1 {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.camera-game {
+  width: min(92vw, 960px);
+}
+
+.play-title {
+  margin: -1.25rem 0 1rem;
+  color: #ff1f1f;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.camera-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.camera-wrapper video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: contain;
+  background: #111111;
+}
+
+.wrist-dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff1f1f;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.score-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ff1f1f;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.countdown-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ff1f1f;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.game-hud {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.result-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.result-screen h2,
+.result-screen p {
+  margin: 0;
+}
+
+.result-screen h2 {
+  font-size: 1.75rem;
+}
+
+.result-screen p {
+  color: #ff1f1f;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.debug-panel {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.4rem 0.5rem;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.error-message {
+  margin: 0;
+  color: #b00020;
+  font-weight: 600;
+}
